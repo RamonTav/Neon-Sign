@@ -3,24 +3,10 @@ html {
    font-size: 100%;
 }
 
-
-body {
-   display: grid; 
-   grid-template-areas: " A B B B C "
-                        " A D D D C "
-                        " A E E F C "
-                        " A G G G C "
-                        " A H H H C ";
-   grid-template-columns: 1fr repeat(3,25%) 1fr;
-   padding-left: 0;
-   /* background: #ABABAB; */
-  }
-
 span {
    color: #64C4BC;
    font-weight: bold;
 }
-
 
 h2 {
    padding-bottom: 0.5em;
@@ -66,20 +52,8 @@ header p {
 }
 
 .Resume {
-   grid-area: D;
    margin-top: 0;
    margin-bottom: 2rem;
-   font-size: 1.5em;
-}
-
-main {
-   display: none;
-   grid-area: E;
-   margin-right: 1em;
-   margin-bottom: 1rem;
-}
-
-#Education li {
    font-size: 1.5em;
 }
 
@@ -92,55 +66,24 @@ main {
    margin-left: 0;
 }
 
-main article, section article, #Education article {
-   display: flex;
-}
 
-.Year {
-      flex: 0 0 auto;
-      width: 2.0em;
-      font-size: 1.5em;
-      padding: 0.8em;
-      margin-right: 0.2em; 
-      margin-left: 0.2em; 
-      margin-top: 1em;
-}
-
-main ul, section ul, #Education ul{
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-top: 1em;
-   padding-left: 1em;
-   border-left: 1px solid black;
-   flex: 1 1 auto;
-}
-
-main li {
-     font-size: 1.5em;
-     margin-bottom: 0.5rem;
-  }
-
-main li:first-child {
-     margin-bottom: 0rem;
-  }
-
-aside {
+main {
    grid-area: D;
    margin-bottom: 1rem;
    background-color: #fff;
 }
 
-aside div {
+main div {
    border-bottom: 1em solid white;
 }
 
-aside div h2 {
+main div h2 {
    border-bottom: 1px solid black;
    margin-left: 0.5em;
 
 }
 
-aside ul {
+main ul {
    margin-top: 0.5em;
    margin-bottom: 0.5em;
    padding-left: 1em;
@@ -148,22 +91,6 @@ aside ul {
 
 }
 
-#PersonalInfo {
-   display: none;
-}
-
-#Leadership {
-   border-bottom: 0;
-}
-
-
-#Education {
-   grid-area: G;
-   display: none;
-   margin-right: 1em;
-   margin-bottom: 1rem;
-   width: 100%;
-}
 
 #Encuesta {
       width: 100%;
@@ -190,8 +117,6 @@ aside ul {
 
 }
 
-
-
 .P00 {
   width:00%;
 }
@@ -203,7 +128,6 @@ aside ul {
 .P20 {
    width:20%;
 }
-
 
 
 .P30 {
@@ -222,9 +146,23 @@ aside ul {
    width:60%;
 }
 
+.P70 {
+   width:70%;
+}
+
+.P80 {
+   width:80%;
+}
+
+.P90 {
+   width:90%;
+}
+
+.P100 {
+   width:100%;
+}
 
 footer {
-   grid-area: H;
    justify-self: center;
    display: flex;
    font-size: 1.5em;
@@ -261,7 +199,6 @@ footer {
    }
 
    header h1 {
-      order: 0;
       margin-top: 1em;
       margin-left: 1.5rem;
       margin-bottom: 0em;   
@@ -297,40 +234,31 @@ footer {
    }
 
 
-   p.Resume {
-      display: block; /*block*/
-      margin-left: 1em;
-      font-size: 1.5rem;
-      text-justify: auto;
-   }
-
 .TopH2 {
       font-size: 3.0rem;
    }
 
 
-aside {
-     order: 4;
+main {
      margin-bottom: 2rem;
      font-size: 1.5em;
    }
 
-aside div {
+main div {
    border-bottom: 1em solid white;
 }   
       
-aside h2 {
+main h2 {
       padding-left: 1em;
    }
 
 
-aside h4 {
+main h4 {
    margin-top: 0;
    margin-bottom: 1rem;
    }
 
    footer {
-     order: 5;
      display: flex; /*flex*/
      width: 100%;
      align-self: flex-start;
