@@ -248,6 +248,10 @@ footer {
       justify-content: center;
    }
 
+   span {
+      font-size: 3rem;
+   }
+
    header {
       display: flex;
       flex-flow: column;
