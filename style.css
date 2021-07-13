@@ -289,7 +289,7 @@ footer {
 
 
    main {
-      display: block; /*block*/
+      display: none; /*block*/
       order: 1;
       margin-bottom: 2rem;
    }
@@ -347,8 +347,12 @@ aside h2 {
       padding-left: 1em;
    }
 
+#PersonalInfo {
+   display: none;
+}
+
 #Education {
-      display: block; /*block*/
+      display: none; /*block*/
       order: 3;
       margin-bottom: 2rem;
       font-size: 1.5rem;
@@ -362,9 +366,8 @@ aside h2 {
 
    footer {
      order: 5;
-     display: none;
+     display: none; /*flex*/
      align-self: flex-start;
-     display: flex;
      flex-direction: column;
      justify-content: flex-start;
      font-size: 3em;
