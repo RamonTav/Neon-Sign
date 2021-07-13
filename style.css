@@ -24,6 +24,7 @@ ul {
 }
 
 header {
+   grid-area: B;
    margin-bottom: 2rem;
    justify-content: space-between;
    background-color: #64C4BC;
@@ -37,7 +38,6 @@ header span {
 
 header h1 {
    font-size: 3em;
-   margin-top: 0;
    margin-bottom: 0.5rem;
    padding-right: 0;
 }
@@ -68,6 +68,7 @@ header p {
 
 
 main {
+   grid-area: D;
    margin-bottom: 1rem;
    background-color: #fff;
 }
@@ -99,21 +100,18 @@ main ul {
 
 #Encuesta article {
    border-bottom: 1px solid black;
-   margin-bottom: 1rem;
+   margin-bottom: 2rem;
    }
-
-
-
 
 .ProgressBar {
    background-color: #FEFEFE;
-   margin-bottom: 1rem;
+   margin-bottom: 2rem;
    border-bottom: 0;
 }
 
 .ProgressBar div {
-   height:3em;
-   background-color: gold; /*64C4BC*/
+   height:1em;
+   background-color: gold; /*#64C4BC*/
    margin-top: 0;
    border-bottom: 0;
 
@@ -190,11 +188,8 @@ footer {
    }
 
    span {
-      font-size: 5rem;
+      font-size: 3rem;
    }
-
-
-
 
    header {
       display: flex;
@@ -204,22 +199,20 @@ footer {
    }
 
    header h1 {
-      margin-top: 1rem;
+      margin-top: 1em;
       margin-left: 1.5rem;
       margin-bottom: 0em;   
       font-size: 4.2em;
    }
 
    header span {
-      font-size: 7.0rem;
+      font-size: 6.0rem;
    } 
 
    header h2 {
-      font-size: 5.0em;
-      margin-top: 0rem;
+      font-size: 3.2em;
       margin-left: 1.5rem;
       margin-bottom: 0;
-      padding-bottom: 0rem;
    }
 
    
@@ -236,9 +229,13 @@ footer {
       font-size: 2.5rem;
    }
 
+   .HeaderP {
+      margin-bottom: 0.9em;
+   }
+
 
 .TopH2 {
-      font-size: 4.0rem;
+      font-size: 3.0rem;
    }
 
 
@@ -256,19 +253,10 @@ main h2 {
    }
 
 
-.Votantes {
+main h4 {
    margin-top: 0;
    margin-bottom: 1rem;
-   font-size: 2em;   
-   padding: 0;
-   font-weight: bold;
    }
-
-.Votantes li {
-   display: inline;
-}
-
-
 
    footer {
      display: flex; /*flex*/
@@ -276,7 +264,7 @@ main h2 {
      align-self: flex-start;
      flex-direction: column;
      justify-content: flex-start;
-     font-size: 3rem;
+     font-size: 2rem;
      background-color: #EEEEEE;
    }
 
