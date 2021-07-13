@@ -1,0 +1,383 @@
+html {  
+   font-family: Helvetica, sans-serif;
+   font-size: 100%;
+}
+
+
+body {
+   display: grid; 
+   grid-template-areas: " A B B B C "
+                        " A D D D C "
+                        " A E E F C "
+                        " A G G G C "
+                        " A H H H C ";
+   grid-template-columns: 1fr repeat(3,25%) 1fr;
+   padding-left: 0;
+   /* background: #ABABAB; */
+  }
+
+span {
+   color: #64C4BC;
+   font-weight: bold;
+}
+
+
+h2 {
+   padding-bottom: 0.5em;
+}
+
+
+ul {
+   list-style: none;
+}
+
+
+.area {
+   background-color: #EEEEEE;
+   padding-bottom: 1em;
+}
+
+header {
+   grid-area: B;
+   margin-bottom: 2rem;
+   justify-content: space-between;
+   background-color: #64C4BC;
+   padding-left: 1em;
+   margin-bottom: 2rem;
+}
+header span {
+   color: white;
+   font-weight: bold;
+}
+
+header h1 {
+   font-size: 3em;
+   margin-bottom: 0.5rem;
+   padding-right: 0;
+}
+
+header div {
+   padding-top: 1em;
+}
+
+header p {
+   line-height: 0.3em;
+   padding-right: 1em;
+}
+
+.Resume {
+   grid-area: D;
+   margin-top: 0;
+   margin-bottom: 2rem;
+   font-size: 1.5em;
+}
+
+main {
+   display: none;
+   grid-area: E;
+   margin-right: 1em;
+   margin-bottom: 1rem;
+}
+
+#Education li {
+   font-size: 1.5em;
+}
+
+
+.TopH2 {
+   margin-bottom: 0;
+   border-bottom: 1px solid black;
+   padding-bottom: 0.5em;
+   padding-left: 1em;
+   margin-left: 0;
+}
+
+main article, section article, #Education article {
+   display: flex;
+}
+
+.Year {
+      flex: 0 0 auto;
+      width: 2.0em;
+      font-size: 1.5em;
+      padding: 0.8em;
+      margin-right: 0.2em; 
+      margin-left: 0.2em; 
+      margin-top: 1em;
+}
+
+main ul, section ul, #Education ul{
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 1em;
+   padding-left: 1em;
+   border-left: 1px solid black;
+   flex: 1 1 auto;
+}
+
+main li {
+     font-size: 1.5em;
+     margin-bottom: 0.5rem;
+  }
+
+main li:first-child {
+     margin-bottom: 0rem;
+  }
+
+aside {
+   grid-area: D;
+   margin-bottom: 1rem;
+   background-color: #fff;
+}
+
+aside div {
+   border-bottom: 1em solid white;
+}
+
+aside div h2 {
+   border-bottom: 1px solid black;
+   margin-left: 0.5em;
+
+}
+
+aside ul {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   padding-left: 1em;
+   padding-right: 1em;
+
+}
+
+#PersonalInfo {
+   display: none;
+}
+
+#Leadership {
+   border-bottom: 0;
+}
+
+
+#Education {
+   grid-area: G;
+   display: none;
+   margin-right: 1em;
+   margin-bottom: 1rem;
+   width: 100%;
+}
+
+#Skills {
+      width: 100%;
+      padding-bottom: 1em;
+      border-bottom: 0;
+   }
+
+#Skills span {
+   color: black; 
+}
+
+
+.ProgressBar {
+   background-color: #FEFEFE;
+   border-bottom: 0;
+}
+
+.ProgressBar div {
+   height:1em;
+   background-color: #64C4BC;
+   border-bottom: 0;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+}
+
+
+
+.P00 {
+  width:00%;
+}
+
+.P10 {
+   width:10%;
+}
+
+.P20 {
+   width:20%;
+}
+
+
+
+.P30 {
+   width:30%;
+}
+
+.P40 {
+   width:40%;
+}
+
+.P50 {
+   width:50%;
+}
+
+.P60 {
+   width:60%;
+}
+
+
+footer {
+   grid-area: H;
+   justify-self: center;
+   display: flex;
+   font-size: 1.5em;
+   display: none;
+}
+
+@media all and (max-width: 980px) {
+
+   html {
+      width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      text-size-adjust: none;
+   }
+
+
+   body {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+   }
+
+   header {
+      display: flex;
+      flex-flow: column;
+      border-bottom: 0;
+      padding-bottom: 2em;
+   }
+
+   header h1 {
+      order: 0;
+      margin-top: 1em;
+      margin-left: 1.5rem;
+      margin-bottom: 0em;   
+      font-size: 4.2em;
+   }
+
+   header h2 {
+      font-size: 3.2em;
+      margin-left: 1.5rem;
+      margin-bottom: 0;
+   }
+
+   
+   header div {
+      display: flex;
+      flex-flow: row wrap; 
+      justify-content: space-around;
+   } 
+
+   header p {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+   }
+
+   .HeaderP {
+      margin-bottom: 0.9em;
+   }
+
+
+   main {
+      display: block; /*block*/
+      order: 1;
+      margin-bottom: 2rem;
+   }
+
+
+   p.Resume {
+      display: block; /*block*/
+      margin-left: 1em;
+      font-size: 1.5rem;
+      text-justify: auto;
+   }
+
+.TopH2 {
+      font-size: 2.5rem;
+   }
+
+article {
+     display: flex;
+     font-size: 1.5rem;
+     
+  }
+
+   .Year {
+      flex: 0 0 auto;
+      width: 2.0em;
+      padding: 0.5em 0.5em 0.5em 0; margin-right: 0.2em;
+      font-size: 2rem;
+      font-weight: bold;
+   }
+
+main ul {
+     padding-top: 1.5em;
+  }
+
+main li {
+   font-size: 1.5rem;
+  }
+
+main li:first-child {
+     margin-bottom: 0rem;
+  }
+  
+
+aside {
+     order: 4;
+     margin-bottom: 2rem;
+     font-size: 1.5em;
+   }
+
+aside div {
+   border-bottom: 1em solid white;
+}   
+      
+aside h2 {
+      padding-left: 1em;
+   }
+
+#Education {
+      display: block; /*block*/
+      order: 3;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+   }
+
+#Education li {
+      width: 100%;
+      font-size: 1.5rem; 
+   }
+
+
+   footer {
+     order: 5;
+     display: none;
+     align-self: flex-start;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     font-size: 3em;
+   }
+
+   footer p {
+      margin: 0.3em;
+   }
+
+
+.Hidden {
+   display: none;
+}
+
+
+  } 
