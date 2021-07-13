@@ -62,7 +62,8 @@ header p {
    margin-bottom: 0;
    border-bottom: 1px solid black;
    padding-bottom: 0.5em;
-   padding-left: 1em;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
    margin-left: 0;
 }
 
@@ -253,9 +254,10 @@ main h2 {
    }
 
 
-main h4 {
+.Candidato {
    margin-top: 0;
    margin-bottom: 1rem;
+   font-weight: bold;
    }
 
    footer {
