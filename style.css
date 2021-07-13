@@ -167,10 +167,10 @@ aside ul {
 
 #Encuesta {
       width: 100%;
-      padding-bottom: 1em;
+      padding-bottom: 0;
       border-bottom: 0;
-   }
 
+   }
 
 
 .ProgressBar {
