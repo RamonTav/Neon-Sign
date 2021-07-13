@@ -169,21 +169,25 @@ aside ul {
       width: 100%;
       padding-bottom: 0;
       border-bottom: 0;
-
    }
 
+#Encuesta article {
+   border-bottom: 1px solid black;
+   margin-bottom: 2rem;
+   }
 
 .ProgressBar {
    background-color: #FEFEFE;
+   margin-bottom: 2rem;
    border-bottom: 0;
 }
 
 .ProgressBar div {
    height:1em;
    background-color: #64C4BC;
+   margin-top: 0;
    border-bottom: 0;
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
+
 }
 
 
@@ -327,15 +331,13 @@ aside h4 {
 
    footer {
      order: 5;
-     display: none; /*flex*/
+     display: flex; /*flex*/
+     width: 100%;
      align-self: flex-start;
      flex-direction: column;
      justify-content: flex-start;
-     font-size: 3em;
-   }
-
-   footer p {
-      margin: 0.3em;
+     font-size: 2rem;
+     background-color: #EEEEEE;
    }
 
 
