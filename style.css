@@ -270,6 +270,9 @@ main h2 {
      background-color: #EEEEEE;
    }
 
+  footer h5 {
+     font-size: 2rem;
+  } 
 
 .Hidden {
    display: none;
