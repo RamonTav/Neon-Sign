@@ -111,7 +111,7 @@ main ul {
 }
 
 .ProgressBar div {
-   height:1em;
+   height:2em;
    background-color: gold; /*#64C4BC*/
    margin-top: 0;
    border-bottom: 0;
@@ -260,6 +260,19 @@ main h2 {
    font-weight: bold;
    }
 
+.Votantes {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+
+}
+
+.Votantes li {
+   display: inline;
+}
+
+
    footer {
      display: flex; /*flex*/
      width: 100%;
@@ -270,8 +283,13 @@ main h2 {
      background-color: #EEEEEE;
    }
 
+   footer h3 {
+      margin-bottom: 1rem;
+   }
+
   footer h5 {
      font-size: 2rem;
+     margin-top: 0;
   } 
 
 .Hidden {
