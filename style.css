@@ -104,6 +104,11 @@ main ul {
    margin-bottom: 2rem;
    }
 
+.Votantes li {
+   display: inline;
+   font-size: 2rem;
+}
+
 .ProgressBar {
    background-color: #FEFEFE;
    margin-bottom: 2rem;
@@ -167,7 +172,6 @@ footer {
    justify-self: center;
    display: flex;
    font-size: 1.5em;
-   display: none;
 }
 
 @media all and (max-width: 980px) {
@@ -259,6 +263,7 @@ main h2 {
    margin-bottom: 1rem;
    font-weight: bold;
    }
+
 
 .Votantes {
    margin-top: 0;
