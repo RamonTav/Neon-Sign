@@ -104,11 +104,9 @@ main ul {
    margin-bottom: 2rem;
    }
 
-
-
-
 div.Votantes {
    display: flex;
+   border-bottom: 0;
 }
 
 .ProgressBar {
