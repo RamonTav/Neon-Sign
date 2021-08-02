@@ -98,10 +98,14 @@ main ul {
    margin-bottom: 2rem;
    }
 
+.Faltantes h3 {
+  font-size: 2.5rem;
+}
+
 .Faltantes h4 {
  color: red;
  font-size: 2rem;
-
+ margin: 0 0 1rem;
 }
 
 
