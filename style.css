@@ -42,13 +42,9 @@ header h1 {
    padding-right: 0;
 }
 
-header div {
-   padding-top: 1em;
-}
-
-header p {
-   line-height: 0.3em;
-   padding-right: 1em;
+header h3 {
+   font-size: 2.0em;
+   margin-left: 1.5rem;
 }
 
 .Resume {
