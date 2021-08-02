@@ -20,7 +20,7 @@ ul {
 
 .area {
    background-color: #EEEEEE;
-   padding-bottom: 1em;
+   padding-bottom: 1rem;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
    margin-bottom: 2rem;
    justify-content: space-between;
    background-color: #64C4BC;
-   padding-left: 1em;
+   padding: 0 0 1rem 1rem;
    margin-bottom: 2rem;
 }
 header span {
@@ -43,8 +43,8 @@ header h1 {
 }
 
 header h3 {
-   font-size: 2.0em;
-   margin: 0 0 0 1.5rem;
+   font-size: 1.0rem;
+   margin: 0;
 }
 
 .Resume {
@@ -85,9 +85,7 @@ main ul {
    margin-bottom: 0.5em;
    padding-left: 1em;
    padding-right: 1em;
-
 }
-
 
 #Encuesta {
       width: 100%;
@@ -99,6 +97,13 @@ main ul {
    border-bottom: 1px solid black;
    margin-bottom: 2rem;
    }
+
+.Faltantes h4 {
+ color: red;
+ font-size: 2rem;
+
+}
+
 
 div.Votantes {
    display: flex;
@@ -253,6 +258,10 @@ main h2 {
       padding-left: 1em;
    }
 
+header h3 {
+   font-size: 2.0rem;
+   margin: 0 0 0 1.5rem;
+}
 
 .Candidato {
    margin-top: 0;
