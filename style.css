@@ -1,6 +1,10 @@
-html {  
+@import url('https://fonts.googleapis.com/css?family=Poppins&effect=neon');
+@import url('https://fonts.googleapis.com/css?family=Poppins&effect=fire');
+
+html,  body{  
    font-family: Helvetica, sans-serif;
    font-size: 100%;
+   background-color: #282626;
 }
 
 span {
@@ -19,7 +23,7 @@ ul {
 
 
 .area {
-   background-color: #EEEEEE;
+   background-color: #282626;
    padding-bottom: 1rem;
 }
 
@@ -27,7 +31,7 @@ header {
    grid-area: B;
    margin-bottom: 2rem;
    justify-content: space-between;
-   background-color: #64C4BC;
+   background-color: black;
    padding: 0 0 1rem 1rem;
    margin-bottom: 2rem;
 }
@@ -38,13 +42,15 @@ header span {
 
 header h1 {
    font-size: 3em;
-   margin-bottom: 0.5rem;
+   margin-bottom: 3em;
    padding-right: 0;
+   text-align: center;
 }
 
 header h3 {
    font-size: 1.0rem;
    margin: 0;
+   color: crimson;
 }
 
 .Resume {
@@ -61,6 +67,7 @@ header h3 {
    padding-left: 0.5em;
    padding-right: 0.5em;
    margin-left: 0;
+   color: crimson;
 }
 
 
@@ -121,15 +128,25 @@ div.Votantes {
    border-bottom: 0;
 }
 
+.Votantes h4 {
+   flex: 0 0 0;
+   width: 10%;
+   padding: 0 0.8em;
+}
+
+.Votantes h4:first-child {
+   padding-left: 0;
+}
+
 .ProgressBar {
-   background-color: #FEFEFE;
+   background-color: #000;
    margin-bottom: 2rem;
    border-bottom: 0;
 }
 
 .ProgressBar div {
    height:2em;
-   background-color: gold; /*#64C4BC*/
+   background-color: orangered; /*#64C4BC*/
    margin-top: 0;
    border-bottom: 0;
 
@@ -218,7 +235,7 @@ footer {
    header h1 {
       margin-top: 1em;
       margin-left: 1.5rem;
-      margin-bottom: 0em;   
+      margin-bottom: 1em;   
       font-size: 4.2em;
    }
 
@@ -272,6 +289,7 @@ main h2 {
 header h3 {
    font-size: 2.0rem;
    margin: 0 0 0 1.5rem;
+   color:: crimson;
 }
 
 .Candidato {
