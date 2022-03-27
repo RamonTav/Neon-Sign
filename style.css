@@ -12,6 +12,16 @@ span {
    font-weight: bold;
 }
 
+h1 {
+   display: block;
+}
+
+
+#B {
+   display: none;
+}
+
+
 h2 {
    padding-bottom: 0.5em;
 }
