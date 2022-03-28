@@ -19,7 +19,9 @@ h1 {
 }
 
 
-#B {
+
+
+#A, #B {
    display: none;
 }
 
