@@ -18,6 +18,7 @@ var testPoint = document.getElementById('test');
    setTimeout(functionAOff, 020);}
    else {
    document.getElementById('A').style.display = 'block';
+
 //Starting block
    const eventAOff1 = new Event('AOff1');
    var speedAOff1 = 20;
@@ -29,7 +30,7 @@ var testPoint = document.getElementById('test');
    speedAOff1--;
    setTimeout(functionAOff1, 036);}
    else {
-   document.getElementById('A').style.display = 'none';
+   document.getElementById('A').style.display = 'block';
 //Starting block
    const eventAOff2 = new Event('AOff2');
    var speedAOff2 = 20;
