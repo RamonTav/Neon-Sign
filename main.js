@@ -114,6 +114,33 @@ var testPoint = document.getElementById('test');
    setTimeout(functionAOff5, 0);}
    else {
    document.getElementById('B').style.display = 'block';
+//Starting block
+   const eventAOff3 = new Event('AOff3');
+   var speedAOff3 = 20;
+   document.getElementById('B').addEventListener('AOff3', functionAOff3());
+   document.getElementById('B').dispatchEvent(eventAOff3);
+
+   function functionAOff3() {
+   if (speedAOff3  > 0) {
+   speedAOff3--;
+   setTimeout(functionAOff3, 120);}
+   else {
+   document.getElementById('B').style.display = 'none';
+//Starting block
+   const eventAOff5 = new Event('AOff5');
+   var speedAOff5 = 0;
+   document.getElementById('A').addEventListener('AOff5', functionAOff5());
+   document.getElementById('A').dispatchEvent(eventAOff5);
+   function functionAOff5() {
+   if (speedAOff5  > 0) {
+   speedAOff5--;
+   setTimeout(functionAOff5, 0);}
+   else {
+   document.getElementById('A').style.display = 'block';
+      }
+      }
+      }
+      }
       }
       }
       }
